@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amritesh Verma Port Follio</title>
+  <link rel="stylesheet" href="./portFollio.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+</head>
+
+<body class="theme-light layout-container">
+  <header>
+    <a class="header-logo"> &lt;Amritesh Verma&gt; </a>
+    <ul class="header-links">
+      <li class="theme-light">
+        <a href="#skills">Skills</a>
+      </li>
+      <li class="theme-light">
+        <a href="#experience">Experiences</a>
+      </li>
+      <li class="theme-light">
+        <a href="#education">Educations</a>
+      </li>
+      <li class="theme-light">
+        <a href="#contact">Contact</a>
+      </li>
+      <div class="toggle-switch" id="toggle-switch">
+        <div class="theme-light" onclick="changeTheme()">
+          <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="moon">
+              <g>
+                <g>
+                  <path fill="#ffe500"
+                    d="M40.8 28.4C43.5 18 38.1 7 28.2 2.7c-2.6-1.1-5.4-1.7-8-1.8-.9 0-1.4 1-.8 1.7 4.5 4.7 6.8 11 5.8 17.8-.9 3.6-6.2 2.7-8 4.4-1.9 1.8 4.2 5.1 4.2 5.1-3.3 4.7-8.5 8.2-14.1 9.4-.9.2-1.1 1.3-.3 1.8 1.7 1.2 3.6 2.1 5.6 2.8 12 3.9 24.9-3.1 28.2-15.5z" />
+                  <ellipse cx="24" cy="45.6" fill="#45413c" opacity=".15" rx="11.5" ry="1.5" />
+                  <g>
+                    <path fill="#fff48c"
+                      d="M18.1 27.6c2.3-.7 5.7-.8 6.4-3.6.1-.9.2-1.7.2-2.6-1.6 2.4-5.9 1.8-7.6 3.4-.8.8-.1 1.9 1 2.8zM28.2 2.7c-2.6-1.1-5.4-1.7-8-1.8-.9 0-1.4 1-.8 1.7.6.7 1.2 1.3 1.7 2 9.4 1 17.2 8 19.2 17.4.5 2.3.6 4.6.3 6.8 0-.1.1-.3.1-.4C43.5 18 38.1 7 28.2 2.7zM7 41.1c.6.4 1.3.8 2 1.2 3.4-1.1 8.1-5.3 10.4-7.4.7-.6.6-1.7-.2-2.2-3.2 3.3-7.3 5.8-11.8 6.7-.9 0-1.2 1.2-.4 1.7z" />
+                  </g>
+                  <path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    d="M40.8 28.4C43.5 18 38.1 7 28.2 2.7c-2.6-1.1-5.4-1.7-8-1.8-.9 0-1.4 1-.8 1.7 4.5 4.7 6.8 11 5.8 17.8-.9 3.6-6.2 2.7-8 4.4-1.9 1.8 4.2 5.1 4.2 5.1-3.3 4.7-8.5 8.2-14.1 9.4-.9.2-1.1 1.3-.3 1.8 1.7 1.2 3.6 2.1 5.6 2.8 12 3.9 24.9-3.1 28.2-15.5zM21.4 29.9c1.9 1.1 3.4 1.4 3.8-.4" />
+                  <circle cx="30.3" cy="23.5" r="1.1" fill="#45413c" stroke="#45413c" stroke-miterlimit="10"
+                    transform="rotate(-71.893 30.32 23.481)" />
+                  <circle cx="32.1" cy="33.6" r="1.3" fill="#fffacf" transform="rotate(-71.899 32.132 33.616)" />
+                  <path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    d="M17.9 33.9s3.4 3.6 8.3 2.3M26.9 33.9s-1 1-.7 2.2c.4 1.5 1.9 1.7 1.9 1.7" />
+                </g>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+    </ul>
+    <div id="header-menu" class="theme-light" onclick="showSideBar()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="menu">
+        <path fill="#000"
+          d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm1 5a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H4z" />
+      </svg>
+      <div id="header-sideBar" class="header-sideBar-collapse">
+        <ul>
+          <li class="theme-light">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="theme-light">
+            <a href="#experience">Experiences</a>
+          </li>
+          <li class="theme-light">
+            <a href="#education">Educations</a>
+          </li>
+          <li class="theme-light">
+            <a href="#contact">Contact</a>
+          </li>
+          <div class="toggle-switch" id="toggle-switch2">
+            <div class="theme-light" onclick="changeTheme()">
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="moon">
+                  <g>
+                    <g>
+                      <path fill="#ffe500"
+                        d="M40.8 28.4C43.5 18 38.1 7 28.2 2.7c-2.6-1.1-5.4-1.7-8-1.8-.9 0-1.4 1-.8 1.7 4.5 4.7 6.8 11 5.8 17.8-.9 3.6-6.2 2.7-8 4.4-1.9 1.8 4.2 5.1 4.2 5.1-3.3 4.7-8.5 8.2-14.1 9.4-.9.2-1.1 1.3-.3 1.8 1.7 1.2 3.6 2.1 5.6 2.8 12 3.9 24.9-3.1 28.2-15.5z" />
+                      <ellipse cx="24" cy="45.6" fill="#45413c" opacity=".15" rx="11.5" ry="1.5" />
+                      <g>
+                        <path fill="#fff48c"
+                          d="M18.1 27.6c2.3-.7 5.7-.8 6.4-3.6.1-.9.2-1.7.2-2.6-1.6 2.4-5.9 1.8-7.6 3.4-.8.8-.1 1.9 1 2.8zM28.2 2.7c-2.6-1.1-5.4-1.7-8-1.8-.9 0-1.4 1-.8 1.7.6.7 1.2 1.3 1.7 2 9.4 1 17.2 8 19.2 17.4.5 2.3.6 4.6.3 6.8 0-.1.1-.3.1-.4C43.5 18 38.1 7 28.2 2.7zM7 41.1c.6.4 1.3.8 2 1.2 3.4-1.1 8.1-5.3 10.4-7.4.7-.6.6-1.7-.2-2.2-3.2 3.3-7.3 5.8-11.8 6.7-.9 0-1.2 1.2-.4 1.7z" />
+                      </g>
+                      <path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        d="M40.8 28.4C43.5 18 38.1 7 28.2 2.7c-2.6-1.1-5.4-1.7-8-1.8-.9 0-1.4 1-.8 1.7 4.5 4.7 6.8 11 5.8 17.8-.9 3.6-6.2 2.7-8 4.4-1.9 1.8 4.2 5.1 4.2 5.1-3.3 4.7-8.5 8.2-14.1 9.4-.9.2-1.1 1.3-.3 1.8 1.7 1.2 3.6 2.1 5.6 2.8 12 3.9 24.9-3.1 28.2-15.5zM21.4 29.9c1.9 1.1 3.4 1.4 3.8-.4" />
+                      <circle cx="30.3" cy="23.5" r="1.1" fill="#45413c" stroke="#45413c" stroke-miterlimit="10"
+                        transform="rotate(-71.893 30.32 23.481)" />
+                      <circle cx="32.1" cy="33.6" r="1.3" fill="#fffacf" transform="rotate(-71.899 32.132 33.616)" />
+                      <path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        d="M17.9 33.9s3.4 3.6 8.3 2.3M26.9 33.9s-1 1-.7 2.2c.4 1.5 1.9 1.7 1.9 1.7" />
+                    </g>
+                  </g>
+                </svg></div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div id="transparent-background" class="transparent-background-collapse" onclick="hideSideBar()">
+    </div>
+  </header>
+  <div id="summary" class="summary">
+    <div>
+      <div class="content">
+        <h1>
+          Hi all, I'm Amritesh
+          <span className="wave-emoji">👋</span>
+        </h1>
+        Experienced Frontend Developer with almost 3 years of practical
+        expertise in developing and deploying applications and solutions using
+        diverse technologies and programming languages. I am en- thusiastic
+        about securing a position that allows me to leverage my skills and
+        capabilities to contribute significantly to the organiza- tion&apos;s
+        growth while advancing my professional career.
+      </div>
+      <div class="image-container"> <img alt="man sitting on table" src="./images/Amritesh.jpg"></img></div>
+    </div>
+    <div>
+      <a href="#contact"> <button class="theme-light">Contact Me</button></a>
+      <a href="./images/AmriteshResume.pdf" download="Amritesh_Verma_Resume.pdf"><button class="theme-light">Download
+          Resume</button></a>
+    </div>
+  </div>
+  <div id="skills" class="skills">
+    <div class="skills-heading">Skills</div>
+    <div class="skills-content-image">
+      <div id="skills-image">
+      </div>
+      <div class="skills-content">
+        <div class="skills-label">Next Js</div>
+        <div class="skills-bar theme-light">
+          <div class="skills-per" style="width:95%"></div>
+        </div>
+        <div class="skills-label">React Js</div>
+        <div class="skills-bar theme-light">
+          <div class="skills-per" style="width:90%"></div>
+        </div>
+        <div class="skills-label">Javascript/Typescript</div>
+        <div class="skills-bar theme-light">
+          <div class="skills-per" style="width:80%"></div>
+        </div>
+        <div class="skills-label">HTML/CSS</div>
+        <div class="skills-bar theme-light">
+          <div class="skills-per" style="width:90%"></div>
+        </div>
+        <div class="skills-label">GraphQL/Rest API</div>
+        <div class="skills-bar theme-light">
+          <div class="skills-per" style="width:90%"></div>
+        </div>
+        <div class="skills-label">MySQL</div>
+        <div class="skills-bar theme-light">
+          <div class="skills-per" style="width:70%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="experience" class="experience">
+    <div class="experience-heading">Experience</div>
+    <div class="experience-cards">
+      <div class="experience-card" style="border: 2px solid #d92d3e;">
+        <div class="experience-header" style="border: 2px solid #d92d3e;
+        background-color: #d92d3e">
+          <div style="border: 2px solid #d92d3e">
+            <img src="./images/qss.png" alt="QSSLogo" height="100%" width="100%" />
+          </div>
+        </div>
+        <div class="experience-body">
+          <div class="experience-title">QSS Technosoft Inc.</div>
+          <div class="experience-subTitle">Senior Software Engineer (Frontend Developer)</div>
+          <div class="experience-copy">April, 2022 - Present</div>
+          <div class="experience-project">
+            <div class="experience-project-title">LOOP Village</div>
+            <p>Our mission is to enhance the lives of seniors worldwide by fos- tering meaningful connections through
+              captivating virtual classes, events, and content. Our aim is to create unparalleled emotional bonds and
+              alleviate the pain of social isolation</p>
+            <ul>
+              <li>
+                As part of this project, I am individually spearheading the UI develop-
+                ment using cutting-edge technologies such as Next.js, React.js, SCSS,
+                and TypeScript.
+
+              </li>
+              <li>
+                Independently developing the project from the ground up, ensuring
+                seamless integration of essential platforms such as Auth0, vercel, Ha-
+                sura, Cloudflare, Zoom, Mailgun, Twilio etc.
+
+              </li>
+              <li>
+                I have authored numerous server-endpoint APIs in our project to fa-
+                cilitate seamless interaction with our essential integrated platforms.
+              </li>
+            </ul>
+            <a href="https://members.theloopvillage.com/" target="_blank"><button class="theme-light">Visit Site</button></a>
+          </div>
+          <div class="experience-project">
+            <div class="experience-project-title">GPS</div>
+            <p>
+              Aimed at efficiently managing employees, clients, contractors, and the hiring process, as well as handling
+              sensitive HR details for the company.
+            </p>
+            <ul>
+              <li>
+                As part of my role, I actively participated in daily standup meetings
+                and collaborated closely with business analysts (project owners) to
+                comprehend business logic and client requirements.
+              </li>
+              <li>
+                I focused on optimizing code and improving response times by reeval-
+                uating the component structure.
+              </li>
+              <li>
+                Additionally, I successfully developed a new system that captures
+                comprehensive commit histories from various projects managed by clients. This implementation involved
+                leveraging tools like GitHub, GitLab, and employing Promises, async, and await functionality effec-
+                tively.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="experience-card">
+        <div class="experience-header">
+          <div><img src="./images/infosysLogo.webp" alt="InfosysLogo" height="100%" width="100%" /></div>
+        </div>
+        <div class="experience-body">
+          <div class="experience-title">Infosys</div>
+          <div class="experience-subTitle">System Engineer (Frontend Developer)</div>
+          <div class="experience-copy">Nov, 2020 - Mar, 2022</div>
+          <div class="experience-project">
+            <div class="experience-project-title">AT&T</div>
+            <p>Our goal is to fortify our network, enabling a wide range of ad-
+              vancements, from smarter homes and cities to high-quality remote healthcare, augmented and virtual reality
+              experiences.</p>
+            <ul>
+              <li>As part of my role, I actively engaged with business analysts (project owners) to thoroughly grasp the
+                business logic and client require- ments, facilitating seamless project development and successful out-
+                comes.</li>
+              <li>Developed or Modified the UI using React JS, Typescript etc tech. to attract more customers.
+              </li>
+            </ul>
+          </div>
+          <div id="experience-animation">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="education" class="education">
+    <div class="education-heading">Education </div>
+    <div class="education-content-animation">
+      <div id="education-animation">
+
+      </div>
+      <div>
+        <div class="education-card theme-light">
+          <div class="education-image">
+            <img alt="AKGEC Logo" src="./images/akgecLogo.png" />
+          </div>
+          <div class="education-content">
+            <div class="education-degree">Bachelor of Technology</div>
+            <div class="education-name">Ajay Kumar Garg Engineering Collage, Ghaziabad</div>
+            <p>July, 2016 - July, 2020</p>
+          </div>
+        </div>
+        <div class="education-card theme-light">
+          <div class="education-image">
+            <img alt="AKGEC Logo" src="./images/sunFlowerLogo.png" />
+          </div>
+          <div class="education-content">
+            <div class="education-degree">Intermediate</div>
+            <div class="education-name">Sun Flower Public School, Ballia</div>
+            <p>April, 2013 - Mar, 2015</p>
+          </div>
+        </div>
+        <div class="education-card theme-light">
+          <div class="education-image">
+            <img alt="AKGEC Logo" src="./images/dalimsslogo.png" />
+          </div>
+          <div class="education-content">
+            <div class="education-degree">High School</div>
+            <div class="education-name">DALIMSS Rohania, Varanasi</div>
+            <p>April, 2011 - Mar, 2013</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="contact" class="contact">
+    <div class="contact-heading">Contact Me</div>
+    <div class="contact-title">Have Any Questions? Feel Free To Contact Me</div>
+    <div class="contact-copy">I Will Be Happy To Answer Your Questions</div>
+    <div class="contact-method theme-light">
+      <div>
+        <a href="mailto:amriteshverma921@gmail.com" target="_blank">
+          <div id="lottie-email" style="height: 200px; width: 100%"></div>
+          <div class="contact-title">
+            Email
+          </div>
+          <div>amriteshverma129@gmail.com</div>
+        </a>
+      </div>
+      <div>
+        <a href="tel:+917065322502" target="_blank">
+          <div id="lottie-message" style="height: 200px; width: 100%"></div>
+          <div class="contact-title">
+            SMS
+          </div>
+          <div>+91-7065322502</div>
+        </a>
+      </div>
+      <div>
+        <a href="https://wa.me/917065322502" target="_blank">
+          <div id="lottie-whatsapp" style="height: 200px; width: 100%"></div>
+          <div class="contact-title">
+            WhatsApp
+          </div>
+          <div>+91-7065322502</div>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/amritesh-verma-792157193/" target="_blank">
+          <div id="lottie-linkedin" style="height: 200px; width: 100%"></div>
+          <div class="contact-title">
+            LinkedIn
+          </div>
+          <div>Amritesh Verma</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./portFollio.js"></script>
+
+</html>
