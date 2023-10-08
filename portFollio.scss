@@ -259,7 +259,7 @@ header {
 
       .header-sideBar-collapse {
         transition: all 0.5 ease-out;
-        right: 700px;
+        right: 1800px;
         opacity: 1;
       }
 
@@ -532,12 +532,13 @@ header {
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
-          height: 130px;
-          width: 130px;
+          height: 150px;
+          width: 150px;
           background-color: $White;
-          bottom: -65px;
+          bottom: -75px;
           border-radius: 50%;
           border: 1px solid #3781c2;
+          padding: 5px;
 
           img {
             border-radius: 50%;
@@ -656,5 +657,49 @@ header {
 
   .education-card[class*="theme-dark"] {
     border-bottom: 2px solid $White;
+  }
+}
+
+.mini-projects {
+  .mini-projects-heading {
+    @include section-heading();
+    margin-bottom: 20px;
+  }
+
+  .mini-projects-cards {
+    @include grid(1fr 1fr 1fr, 1fr 1fr, 1fr, 40px);
+
+    .mini-projects-card {
+      border: 2px solid #3781c2;
+      border-radius: 10px;
+      height: 250px;
+      @include font(24px, 600, 34px);
+      color: $White;
+      position: relative;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        object-fit: fill;
+      }
+    }
+    .mini-projects-card-image-overlay {
+      border-radius: 8px;
+      @include flex(center, center);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transition: all 0.3s ease;
+      &:hover {
+        transition: all 0.3s ease;
+        background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+      }
+    }
   }
 }

@@ -235,7 +235,7 @@ header #header-menu {
   }
   header #header-menu .header-sideBar-collapse {
     transition: all 0.5 ease-out;
-    right: 700px;
+    right: 1800px;
     opacity: 1;
   }
   header #header-menu .header-sideBar-expand {
@@ -726,12 +726,13 @@ header .transparent-background-expand {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 130px;
-  width: 130px;
+  height: 150px;
+  width: 150px;
   background-color: #ffffff;
-  bottom: -65px;
+  bottom: -75px;
   border-radius: 50%;
   border: 1px solid #3781c2;
+  padding: 5px;
 }
 .experience .experience-cards .experience-card .experience-header > div img {
   border-radius: 50%;
@@ -954,4 +955,78 @@ header .transparent-background-expand {
 }
 .education .education-card[class*=theme-dark] {
   border-bottom: 2px solid #ffffff;
+}
+
+.mini-projects .mini-projects-heading {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .mini-projects .mini-projects-heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mini-projects .mini-projects-heading {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+}
+.mini-projects .mini-projects-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .mini-projects .mini-projects-cards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mini-projects .mini-projects-cards {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+.mini-projects .mini-projects-cards .mini-projects-card {
+  border: 2px solid #3781c2;
+  border-radius: 10px;
+  height: 250px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #ffffff;
+  position: relative;
+}
+.mini-projects .mini-projects-cards .mini-projects-card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.mini-projects .mini-projects-cards .mini-projects-card-image-overlay {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+.mini-projects .mini-projects-cards .mini-projects-card-image-overlay:hover {
+  transition: all 0.3s ease;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
 }/*# sourceMappingURL=portFollio.css.map */
